@@ -1,0 +1,19 @@
+/* Custom styles for the dropdown */
+.Dropdown-menu {
+    font-size: 16px;
+    background-color: #f7f7f7;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+/* Custom styles for the graphs */
+.graph-container {
+    margin: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom styles for the header */
+h1 {
+    color: #007BFF;
+    font-size: 36px;
+}

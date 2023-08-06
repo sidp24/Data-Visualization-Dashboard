@@ -1,0 +1,56 @@
+Instructions to Set Up Data Visualization Dashboard
+
+Prerequisites:
+
+Python 3.x installed on your system.
+Git installed on your system to clone the repository.
+Clone the Repository:
+
+Open a terminal or command prompt.
+
+Use the following command to clone the repository:
+
+bash
+Copy code
+git clone <repository_url>
+Install Dependencies:
+
+Navigate to the cloned repository's directory:
+
+bash
+Copy code
+cd data-visualization-dashboard
+Install the required Python packages using pip:
+
+bash
+Copy code
+pip install -r requirements.txt
+Run the Dashboard:
+
+Start the Data Visualization Dashboard application:
+
+bash
+Copy code
+python app.py
+The application will be running on http://127.0.0.1:8050/. Open this URL in your web browser to access the dashboard.
+
+Upload Data:
+
+In the dashboard, you'll find a file upload area where you can drag and drop or select a CSV file containing your data.
+Explore Data:
+
+After uploading the data, the dashboard will display two graphs: a bar chart and a line chart.
+Use the dropdown menu to select the column you want to visualize in the charts.
+Interact with the Dashboard:
+
+The dashboard is interactive, and you can change the visualization based on the selected column from the dropdown menu.
+Data Visualization:
+
+The bar chart displays the selected column on the y-axis and the "Month" column on the x-axis.
+The line chart also displays the selected column on the y-axis and the "Month" column on the x-axis.
+Changing Data:
+
+To change the data or visualize a different dataset, upload a new CSV file with the desired data. The dropdown menu will update with the column names from the new data.
+Stop the Dashboard:
+
+To stop the dashboard, press Ctrl + C in the terminal or command prompt where the app is running.
