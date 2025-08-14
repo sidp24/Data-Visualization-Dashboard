@@ -1,19 +1,120 @@
-/* Custom styles for the dropdown */
-.Dropdown-menu {
-    font-size: 16px;
-    background-color: #f7f7f7;
-    color: #333;
-    border: 1px solid #ccc;
+body {
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    background: #f4f6fa;
+    margin: 0;
+    padding: 0;
 }
 
-/* Custom styles for the graphs */
-.graph-container {
-    margin: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Custom styles for the header */
 h1 {
     color: #007BFF;
     font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    background: none;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 24px;
+    margin-bottom: 24px;
+    transition: box-shadow 0.2s;
+}
+.card:hover {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+.graph-container {
+    margin: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    background: #fff;
+    padding: 16px;
+    transition: box-shadow 0.2s;
+}
+
+.dash-dropdown, .dash-dropdown * {
+    font-size: 16px !important;
+    background-color: #f7f7f7 !important;
+    color: #333 !important;
+    border-radius: 6px !important;
+    border: 1px solid #ccc !important;
+}
+
+.dash-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+.dash-table th, .dash-table td {
+    border: 1px solid #eaeaea;
+    padding: 8px 12px;
+    text-align: left;
+}
+.dash-table th {
+    background: #f7f7f7;
+    font-weight: 600;
+}
+
+.dash-btn, button, .download-btn {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+}
+.dash-btn:hover, button:hover, .download-btn:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 900px) {
+    .app-container {
+        padding: 8px;
+    }
+    .card, .graph-container {
+        padding: 12px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+}
+
+/* Dark theme support */
+.dark-theme {
+    background: #222 !important;
+    color: #eee !important;
+}
+.dark-theme .card, .dark-theme .graph-container {
+    background: #333 !important;
+    color: #eee !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.32);
+}
+.dark-theme h1 {
+    color: #90caf9 !important;
+}
+.dark-theme .dash-dropdown, .dark-theme .dash-dropdown * {
+    background: #444 !important;
+    color: #eee !important;
+    border: 1px solid #666 !important;
+}
+.dark-theme .dash-table th {
+    background: #444 !important;
+    color: #eee !important;
+}
+.dark-theme .dash-btn, .dark-theme button, .dark-theme .download-btn {
+    background: #90caf9 !important;
+    color: #222 !important;
 }
